@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script>
+        var one = () => {
+            alert("Its Working...");
+        }
+        var two =(input) =>{
+            alert("You have enter : "+ input);
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>
+        Mouse events Syntex Example
+    </h1>
+    <button onclick="one()">1 click</button>
+    <button ondblclick="one()">2 click</button>
+    <button onmousedown="one()">Left | Right click</button><br><br>
+    <button onmouseenter="one()">Enter Your Mouse Here</button>
+    <button onmouseout="one()">Come in and move out</button>
+    <button onmousemove="one()">Move your mouse here</button><br><br>
+    On Change: <select onchange="one()">
+        <option>Choose</option>
+        <option>Mumbai</option>
+        <option>Pune</option>
+        <option>Nagpur</option>
+        <option>Bangalore</option>
+    </select>
+
+    <h1>Keyboard Events Example</h1>
+    <p>On Key press : <input type="text" value="Apple" onkeypress="two(this.value)"></p>
+    <p>On Key Up : <input type="text" value="Apple" onkeyup="two(this.value)"></p>
+    <p>On Key Down : <input type="text" value="Apple" onkeydown="two(this.value)"></p>
+    <p>On focus : <input type="text" value="Apple" onfocus="two(this.value)"></p>
+    <p>On blur : <input type="text" value="Apple" onblur="two(this.value)"></p>
+    <p>Hi</p>
+    
+</body>
+
+</html>
